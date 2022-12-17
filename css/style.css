@@ -1,0 +1,204 @@
+:root {
+  --Yellow: rgb(175, 145, 7);
+  --40: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.nav {
+  display: flex;
+  background-color: var(--Yellow);
+  justify-content: space-between;
+  height: 60px;
+}
+
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: var(--40);
+  margin-right: var(--40);
+}
+
+.left h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.right a {
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: underline 2px white;
+}
+
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  width: auto;
+  height: 300px;
+
+}
+
+#box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subTitle {
+  color: var(--Yellow);
+  position: absolute;
+  top: 280px;
+  right: 40px;
+  font-size: 30px;
+  background-color: white;
+  padding-inline: 1% 1%;
+}
+
+.page-wrapper {
+  display: grid;
+  background-color: black;
+  color: var(--Yellow);
+  min-height: 100%;
+}
+
+#about {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "h3 . p p";
+  margin: 2% 4%;
+  grid-template-rows: 30%;
+  grid-template-columns: 20% 50%;
+  grid-row-gap: 10%;
+  grid-column-gap: 1%;
+}
+
+h3,
+h4,
+h5 {
+  font-size: 40px;
+
+}
+
+h5 {
+  display: grid;
+  position: table-row-group
+}
+
+p {
+  font-size: 20px;
+}
+
+#work {
+  display: grid;
+  min-height: 500px;
+  grid-template-areas:
+    "h4 . port1  port1"
+    ". . port2  port3"
+    ". . port4  port5";
+  margin: 2% 4%;
+  grid-template-rows: 60%;
+  grid-template-columns: 20% 5% 35% 35%;
+  grid-row-gap: 3%;
+  grid-column-gap: 1%;
+  max-width: 80%;
+}
+
+
+#Port1 {
+  grid-area: port1;
+  background-image: url(../images/Pbk\ 1.jpeg);
+  outline: solid var(--Yellow)
+}
+
+#Port2 {
+  grid-area: port2;
+  background-image: url(../images/Pbk2.jpeg);
+  outline: solid var(--Yellow)
+}
+
+#Port3 {
+  grid-area: port3;
+  background-image: url(../images/Pbk3.png);
+  outline: solid var(--Yellow)
+}
+
+#Port4 {
+  grid-area: port4;
+  background-image: url(../images/Pbk4.jpeg);
+  outline: solid var(--Yellow)
+}
+
+#Port5 {
+  grid-area: port5;
+  background-image: url(../images/Pbk5.jpeg);
+  outline: solid var(--Yellow)
+}
+
+.heading {
+  background-color: var(--Yellow);
+  position: relative;
+  top: 60%;
+  font-size: 25px;
+  padding: 1%;
+  color: white;
+  width: 20%;
+  height: 25%;
+  text-align-last: end;
+}
+
+.Port-Subleft-heading {
+  background-color: var(--Yellow);
+  position: relative;
+  top: 50%;
+  font-size: 10px;
+  color: white;
+  width: 20%;
+  height: 25%;
+  padding: 1%;
+  text-align-last: end;
+}
+
+
+.Port-SubRight-heading {
+  background-color: var(--Yellow);
+  position: relative;
+  top: 50%;
+  font-size: 10px;
+  color: white;
+  width: 20%;
+  height: 25%;
+  padding: 1%;
+  text-align-last: end;
+}
+
+
+#contact {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "h5 . p p p p p";
+  margin: 2% 4%;
+  grid-template-rows: 30%;
+  grid-template-columns: 20%;
+  grid-row-gap: 10%;
+  grid-column-gap: 1%;
+}
+
+#contact>p {
+  position: relative;
+  top: 110%;
+  text-decoration: underline 2px var(--Yellow)
+}
