@@ -3,24 +3,40 @@
   --40: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+
 }
+
+
 
 .nav {
   display: flex;
   background-color: var(--Yellow);
-  justify-content: space-between;
+  justify-content:normal;
   height: 60px;
+  width: 200%
 }
 
+.headshot {
+  border-radius: 90%;
+  scale: 50%;
+}
 
 .left,
 .right {
@@ -36,17 +52,24 @@ body {
   color: white;
 }
 
+.list {
+  list-style:none;
+
+}
 .right a {
   color: white;
   padding: 10px;
   font-size: 15px;
   text-decoration: underline 2px white;
+ 
 }
 
 .hero-banner {
   background-image: url(../images/02-hero-bg.jpg);
-  width: auto;
+  justify-content: stretch;
+  width: 200%;
   height: 300px;
+  
 
 }
 
@@ -59,7 +82,7 @@ body {
 .subTitle {
   color: var(--Yellow);
   position: absolute;
-  top: 280px;
+  top: 180px;
   right: 40px;
   font-size: 30px;
   background-color: white;
@@ -69,13 +92,15 @@ body {
 .page-wrapper {
   display: grid;
   background-color: black;
+  width: 200%;
   color: var(--Yellow);
   min-height: 100%;
+  align-content: space-between;
 }
 
 #about {
   display: grid;
-  width: 100%;
+  width: auto;
   grid-template-areas:
     "h3 . p p";
   margin: 2% 4%;
@@ -103,35 +128,37 @@ p {
 
 #work {
   display: grid;
-  min-height: 500px;
+  min-height: 900px;
   grid-template-areas:
     "h4 . port1  port1"
     ". . port2  port3"
+    ". . port2  port3"
     ". . port4  port5";
   margin: 2% 4%;
-  grid-template-rows: 60%;
+ 
   grid-template-columns: 20% 5% 35% 35%;
   grid-row-gap: 3%;
-  grid-column-gap: 1%;
+ 
   max-width: 80%;
 }
 
 
 #Port1 {
   grid-area: port1;
-  background-image: url(../images/Pbk\ 1.jpeg);
+  background-image: url(../images/P1.png);
   outline: solid var(--Yellow)
 }
 
 #Port2 {
   grid-area: port2;
-  background-image: url(../images/Pbk2.jpeg);
-  outline: solid var(--Yellow)
+  background-image: url(../images/P2.png);
+  outline: solid var(--Yellow);
+  display: grid;
 }
 
 #Port3 {
   grid-area: port3;
-  background-image: url(../images/Pbk3.png);
+  background-image: url(../images/P3.png);
   outline: solid var(--Yellow)
 }
 
@@ -151,24 +178,24 @@ p {
   background-color: var(--Yellow);
   position: relative;
   top: 60%;
-  font-size: 25px;
+  font-size: 80%;
   padding: 1%;
   color: white;
   width: 20%;
   height: 25%;
-  text-align-last: end;
+  text-align-last:center
 }
 
 .Port-Subleft-heading {
   background-color: var(--Yellow);
   position: relative;
   top: 50%;
-  font-size: 10px;
+  font-size: 20px;
   color: white;
   width: 20%;
   height: 25%;
   padding: 1%;
-  text-align-last: end;
+  text-align-last:justify;
 }
 
 
@@ -176,12 +203,12 @@ p {
   background-color: var(--Yellow);
   position: relative;
   top: 50%;
-  font-size: 10px;
+  font-size: 20px;
   color: white;
   width: 20%;
   height: 25%;
   padding: 1%;
-  text-align-last: end;
+  text-align-last: justify;
 }
 
 
