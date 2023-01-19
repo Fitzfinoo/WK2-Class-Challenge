@@ -17,7 +17,7 @@ First, i read the instruction, create the file system and start to build the HTM
 Open Web page and navigate to the projcects section by scrolling, or by clicking projects in the navbar. Click the link to view the project that is of interest to have it open in a new tab. 
 
 
-![alt text](images/preview.jpg.jpg)
+![alt text](images/PREVIEW.png)
 
 <a href="https://fitzfinoo.github.io/WK2-Class-Challenge/"> Live Link </a>
 
